@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IStudentParent</string>
+    <string name="student_name">Student Name</string>
+    <string name="title_activity_base_component">BaseComponent</string>
+    <string name="title_home">Home</string>
+    <string name="title_assignment">Assignment</string>
+    <string name="title_degree">Degree</string>
+    <string name="attendance">Attendance</string>
+    <string name="upcoming_event">Upcoming Event</string>
+    <string name="teachers">Teachers</string>
+     <string name="attendance_today">Attendance Today</string>
+    <string name="math">Math</string>
+    <string name="there_was_home_work">There Was Home Work :</string>
+    <string name="check_bag">Check Your Child Bag</string>
+    <string name="it_should_be_handed">It should be handed next</string>
+</resources>
