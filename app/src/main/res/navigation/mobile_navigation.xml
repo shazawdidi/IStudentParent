@@ -32,4 +32,14 @@
         android:name="com.tztechs.student.ui.teachers.TeachersFragment"
         android:label="@string/title_degree"
         tools:layout="@layout/fragment_degree" />
+    <fragment
+        android:id="@+id/navigation_bus"
+        android:name="com.tztechs.student.ui.fees.FeesFragment"
+        android:label="@string/title_degree"
+        tools:layout="@layout/fragment_degree" />
+    <fragment
+        android:id="@+id/navigation_fees"
+        android:name="com.tztechs.student.ui.trach_bus.TrackBusFragment"
+        android:label="@string/title_degree"
+        tools:layout="@layout/fragment_degree" />
 </navigation>

@@ -28,23 +28,15 @@
             android:id="@+id/navigation_teachers"
             android:icon="@drawable/ic_teachers"
             android:title="@string/teachers" />
+        <item
+            android:id="@+id/navigation_bus"
+            android:icon="@drawable/ic_directions_bus"
+            android:title="Track School Bus" />
+
+        <item
+            android:id="@+id/navigation_fees"
+            android:icon="@drawable/ic_attach_fees"
+            android:title="Student Fees" />
     </group>
-
-<!--    <item android:title="Communicate">-->
-<!--        <item-->
-<!--            android:id="@+id/navigation_home2"-->
-<!--            android:icon="@drawable/ic_home_black_24dp"-->
-<!--            android:title="@string/title_home" />-->
-
-<!--        <item-->
-<!--            android:id="@+id/navigation_assignment2"-->
-<!--            android:icon="@drawable/ic_assignment_black_24dp"-->
-<!--            android:title="@string/title_assignment" />-->
-
-<!--        <item-->
-<!--            android:id="@+id/navigation_degree2"-->
-<!--            android:icon="@drawable/ic_assignment_degree"-->
-<!--            android:title="@string/title_degree" />-->
-<!--    </item>-->
 
 </menu>
