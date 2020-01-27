@@ -8,9 +8,14 @@
     <string name="attendance">Attendance</string>
     <string name="upcoming_event">Upcoming Event</string>
     <string name="teachers">Teachers</string>
-     <string name="attendance_today">Attendance Today</string>
+    <string name="attendance_today">Attendance Today</string>
     <string name="math">Math</string>
     <string name="there_was_home_work">There Was Home Work :</string>
     <string name="check_bag">Check Your Child Bag</string>
     <string name="it_should_be_handed">It should be handed next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="magazine">Magazine</string>
+    <string name="up_coming_events">Up Coming Events</string>
 </resources>

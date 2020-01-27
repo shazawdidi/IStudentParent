@@ -15,11 +15,21 @@
         android:id="@+id/navigation_assignment"
         android:name="com.smartway.istudentparent.ui.assignment.AssignmentFragment"
         android:label="@string/title_assignment"
-        tools:layout="@layout/fragment_Assignment" />
+        tools:layout="@layout/fragment_assignment" />
 
     <fragment
         android:id="@+id/navigation_degree"
         android:name="com.smartway.istudentparent.ui.degree.DegreeFragment"
         android:label="@string/title_degree"
-        tools:layout="@layout/fragment_degreexml" />
+        tools:layout="@layout/fragment_degree" />
+    <fragment
+        android:id="@+id/navigation_attendance"
+        android:name="com.smartway.istudentparent.ui.attendance.AttendanceFragment"
+        android:label="@string/title_degree"
+        tools:layout="@layout/fragment_degree" />
+    <fragment
+        android:id="@+id/navigation_teachers"
+        android:name="com.smartway.istudentparent.ui.teachers.TeachersFragment"
+        android:label="@string/title_degree"
+        tools:layout="@layout/fragment_degree" />
 </navigation>

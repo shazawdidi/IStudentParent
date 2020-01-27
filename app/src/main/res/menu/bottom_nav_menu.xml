@@ -16,5 +16,13 @@
         android:icon="@drawable/ic_assignment_degree"
         android:title="@string/title_degree" />
 
+    <item
+        android:id="@+id/navigation_attendance"
+        android:icon="@drawable/ic_format_atendance"
+        android:title="@string/attendance" />
 
+    <item
+        android:id="@+id/navigation_teachers"
+        android:icon="@drawable/ic_teachers"
+        android:title="@string/teachers" />
 </menu>
