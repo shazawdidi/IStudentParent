@@ -26,20 +26,25 @@
         android:id="@+id/navigation_attendance"
         android:name="com.tztechs.student.ui.attendance.AttendanceFragment"
         android:label="@string/title_degree"
-        tools:layout="@layout/fragment_degree" />
+        tools:layout="@layout/fragment_attendance" />
     <fragment
         android:id="@+id/navigation_teachers"
         android:name="com.tztechs.student.ui.teachers.TeachersFragment"
         android:label="@string/title_degree"
-        tools:layout="@layout/fragment_degree" />
+        tools:layout="@layout/fragment_teachers" />
     <fragment
         android:id="@+id/navigation_bus"
         android:name="com.tztechs.student.ui.fees.FeesFragment"
         android:label="@string/title_degree"
-        tools:layout="@layout/fragment_degree" />
+        tools:layout="@layout/fragment_fees" />
     <fragment
         android:id="@+id/navigation_fees"
-        android:name="com.tztechs.student.ui.trach_bus.TrackBusFragment"
+        android:name="com.tztechs.student.ui.tracKBus.TrackBusFragment"
         android:label="@string/title_degree"
-        tools:layout="@layout/fragment_degree" />
+        tools:layout="@layout/fragment_track_bus" />
+    <fragment
+        android:id="@+id/navigation_time_table"
+        android:name="com.tztechs.student.ui.timeTable.TimeTableFragment"
+        android:label="@string/title_degree"
+        tools:layout="@layout/fragment_timetable" />
 </navigation>

@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_profile"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="70dp"
@@ -29,8 +29,8 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/child_vector"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:src="@drawable/teachers"
@@ -49,19 +49,19 @@
             </LinearLayout>
             <View
                 android:layout_width="1dp"
-                android:layout_height="150sp"
+                android:layout_height="match_parent"
                 android:background="@color/bluetran"
                 android:layout_marginStart="20dp"
                 />
             <View
                 android:layout_width="1dp"
-                android:layout_height="150sp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
                 android:background="@color/bluetran"
                 />
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="40dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 android:background="@color/white"
                 android:layout_gravity="end"
@@ -90,13 +90,12 @@
         app:layout_constraintTop_toTopOf="@id/card_profile"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="120dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
 
             <ScrollView
@@ -104,9 +103,9 @@
                 android:layout_height="match_parent">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="20dp"
+                    android:padding="16dp"
                     android:layout_marginTop="10dp">
 
 

@@ -19,4 +19,7 @@
     <string name="magazine">Magazine</string>
     <string name="up_coming_events">Up Coming Events</string>
     <string name="assingment_tips">If You get an assignment Please Check Your child bag</string>
+    <string name="track_school_bus">Track School Bus</string>
+    <string name="student_fees">Student Fees</string>
+    <string name="time_table">Time Table</string>
 </resources>

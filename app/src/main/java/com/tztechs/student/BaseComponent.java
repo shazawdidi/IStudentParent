@@ -28,7 +28,8 @@ public class BaseComponent extends AppCompatActivity {
         navigationView =findViewById(R.id.nav_view2);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_assignment, R.id.navigation_degree,R.id.navigation_attendance,R.id.navigation_teachers)
+                R.id.navigation_home, R.id.navigation_assignment, R.id.navigation_degree,R.id.navigation_attendance,R.id.navigation_teachers
+        ,R.id.navigation_bus,R.id.navigation_time_table,R.id.navigation_fees)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_profile"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="70dp"
@@ -25,33 +25,43 @@
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
                     android:id="@+id/child_vector"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/child"
-                    app:civ_border_color="#FF5722"
-                    app:civ_border_width="2dp"
+                    android:src="@drawable/time_table"
                     android:layout_marginTop="10dp"
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/student_name"
+                    android:text="@string/time_table"
                     android:gravity="center_horizontal"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
-
+            <View
+                android:layout_width="1dp"
+                android:layout_height="120sp"
+                android:background="@color/blue"
+                android:layout_marginStart="20dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_marginStart="2dp"
+                android:background="@color/blue"
+                />
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="40dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:background="@color/white"
                 android:layout_gravity="end"
@@ -68,257 +78,203 @@
 
     </androidx.cardview.widget.CardView>
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/card_profile"
+    android:layout_marginTop="200dp"
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/card_profile"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="QU= Quran"
-                    android:background="@color/colorPrimary"
-                    android:textColor="#ffffff"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="EN = English"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AR = Arabic"
-                    android:background="@color/colorPrimary"
-                    android:textColor="#ffffff"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MT = Math"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="F = Free"
-                    android:background="@color/colorPrimary"
-                    android:textColor="#ffffff"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AC = Activity"
-                    android:gravity="bottom"
-                    android:padding="5dp"
-                    android:textSize="10sp"/>
-            </LinearLayout>
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp">
-
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Days"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20sp"
+                            android:background="#AD8B7A" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="lec1" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="lec1"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="lec2" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="lec2"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="lec3" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="lec3"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="lec4" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="lec4"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="lec5" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            app:cardBackgroundColor="#F8ECE6">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="lec5"
-                                android:padding="5dp"/>
-                        </androidx.cardview.widget.CardView>
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center_horizontal"
-                            app:cardBackgroundColor="#F8ECE6"
-                            android:padding="10dp">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="lec6"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="lec6" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
@@ -329,17 +285,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Sunday"
-                                />
+                                android:text="Sunday" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            />
+                            android:background="#AD8B7A" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
@@ -357,118 +312,126 @@
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AR"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text=" "
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="MT"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="MT"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
@@ -479,145 +442,144 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Monday"
-                                />
+                                android:text="Monday" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            />
+                            android:background="#AD8B7A" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="QU"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text=" "
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="10dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20sp"
+                            android:background="#AD8B7A"
+                            android:padding="5dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AR"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="AR"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:padding="5dp"
+                                android:text="EN"
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
-                        </androidx.cardview.widget.CardView>
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center_horizontal"
-                            android:padding="10dp">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
@@ -628,145 +590,153 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Tuesday"
-                                />
+                                android:text="Tuesday" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            />
+                            android:background="#AD8B7A" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="QU"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AR"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AR"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text=" "
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
@@ -777,145 +747,153 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Wed day"
-                                />
+                                android:text="Wed day" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            />
+                            android:background="#AD8B7A" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="QU"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="MT"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="MT"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text=" "
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="EN"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
+                        android:orientation="horizontal">
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="60dp"
                             android:layout_height="30dp"
@@ -926,17 +904,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Thursday"
-                                />
+                                android:text="Thursday" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
-                            android:background="#AD8B7A"
-                            />
+                            android:background="#AD8B7A" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
@@ -954,105 +931,110 @@
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="F"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AC"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AC"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text="AC"
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
+
                         <View
                             android:layout_width="1dp"
                             android:layout_height="20sp"
                             android:background="#AD8B7A"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
+
                         <androidx.cardview.widget.CardView
-                            android:layout_width="50dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_horizontal"
                             android:padding="10dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:padding="5dp"
                                 android:text=""
-                                android:textColor="#4CAF50"
-                                android:padding="5dp"/>
+                                android:textColor="#4CAF50" />
                         </androidx.cardview.widget.CardView>
-
                         <View
                             android:layout_width="1dp"
                             android:layout_height="30sp"
-                            android:background="@drawable/spencil"
-                            />
+                            android:background="@drawable/spencil" />
 
                     </LinearLayout>
 
@@ -1060,9 +1042,85 @@
                 </LinearLayout>
 
             </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:text="QU= Quran"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:textColor="@color/blue"
+                    android:text="EN = English"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:text="AR = Arabic"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:textColor="@color/blue"
+                    android:padding="5dp"
+                    android:text="MT = Math"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:text="F = Free"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:textColor="@color/blue"
+                    android:text="AC = Activity"
+                    android:textSize="15sp" />
+            </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
+ </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
