@@ -1,4 +1,4 @@
-package com.smartway.istudentparent.ui.teachers;
+package com.tztechs.student.ui.teachers;
 
 
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.smartway.istudentparent.R;
+import com.tztechs.student.R;
 
 /**
  * A simple {@link Fragment} subclass.

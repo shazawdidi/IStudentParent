@@ -1,4 +1,4 @@
-package com.smartway.istudentparent.ui.assignment;
+package com.tztechs.student.ui.assignment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.smartway.istudentparent.R;
+import com.tztechs.student.R;
 
 public class AssignmentFragment extends Fragment {
 

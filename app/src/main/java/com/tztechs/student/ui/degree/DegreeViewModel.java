@@ -1,14 +1,14 @@
-package com.smartway.istudentparent.ui.attendance;
+package com.tztechs.student.ui.degree;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class AttendanceViewModel extends ViewModel {
+public class DegreeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public AttendanceViewModel() {
+    public DegreeViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
     }

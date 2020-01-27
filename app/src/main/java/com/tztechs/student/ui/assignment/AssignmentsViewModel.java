@@ -1,4 +1,4 @@
-package com.smartway.istudentparent.ui.assignment;
+package com.tztechs.student.ui.assignment;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

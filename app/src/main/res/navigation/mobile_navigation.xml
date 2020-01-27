@@ -7,29 +7,29 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.smartway.istudentparent.ui.home.HomeFragment"
+        android:name="com.tztechs.student.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_assignment"
-        android:name="com.smartway.istudentparent.ui.assignment.AssignmentFragment"
+        android:name="com.tztechs.student.ui.assignment.AssignmentFragment"
         android:label="@string/title_assignment"
         tools:layout="@layout/fragment_assignment" />
 
     <fragment
         android:id="@+id/navigation_degree"
-        android:name="com.smartway.istudentparent.ui.degree.DegreeFragment"
+        android:name="com.tztechs.student.ui.degree.DegreeFragment"
         android:label="@string/title_degree"
         tools:layout="@layout/fragment_degree" />
     <fragment
         android:id="@+id/navigation_attendance"
-        android:name="com.smartway.istudentparent.ui.attendance.AttendanceFragment"
+        android:name="com.tztechs.student.ui.attendance.AttendanceFragment"
         android:label="@string/title_degree"
         tools:layout="@layout/fragment_degree" />
     <fragment
         android:id="@+id/navigation_teachers"
-        android:name="com.smartway.istudentparent.ui.teachers.TeachersFragment"
+        android:name="com.tztechs.student.ui.teachers.TeachersFragment"
         android:label="@string/title_degree"
         tools:layout="@layout/fragment_degree" />
 </navigation>

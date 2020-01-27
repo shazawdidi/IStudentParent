@@ -1,4 +1,4 @@
-package com.smartway.istudentparent;
+package com.tztechs.student;
 
 import org.junit.Test;
 
