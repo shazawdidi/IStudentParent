@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/title_home" />
+
+        <item
+            android:id="@+id/navigation_assignment"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/title_assignment" />
+
+        <item
+            android:id="@+id/navigation_degree"
+            android:icon="@drawable/ic_assignment_degree"
+            android:title="@string/title_degree" />
+
+        <item
+            android:id="@+id/navigation_attendance"
+            android:icon="@drawable/ic_format_atendance"
+            android:title="@string/attendance" />
+
+        <item
+            android:id="@+id/navigation_teachers"
+            android:icon="@drawable/ic_teachers"
+            android:title="@string/teachers" />
+    </group>
+
+<!--    <item android:title="Communicate">-->
+<!--        <item-->
+<!--            android:id="@+id/navigation_home2"-->
+<!--            android:icon="@drawable/ic_home_black_24dp"-->
+<!--            android:title="@string/title_home" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/navigation_assignment2"-->
+<!--            android:icon="@drawable/ic_assignment_black_24dp"-->
+<!--            android:title="@string/title_assignment" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/navigation_degree2"-->
+<!--            android:icon="@drawable/ic_assignment_degree"-->
+<!--            android:title="@string/title_degree" />-->
+<!--    </item>-->
+
+</menu>
