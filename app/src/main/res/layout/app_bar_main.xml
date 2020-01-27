@@ -31,7 +31,7 @@
                     android:layout_marginEnd="15dp"
                     android:layout_marginRight="15dp"
                     android:text="@string/student_name"
-                    android:textColor="@color/orange"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -39,7 +39,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/child"
-                    app:civ_border_color="@color/orange"
+                    app:civ_border_color="@color/bluetran"
                     app:civ_border_width="2dp" />
 
                 <ImageButton

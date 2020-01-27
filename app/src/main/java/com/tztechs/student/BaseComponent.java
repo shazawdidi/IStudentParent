@@ -39,6 +39,7 @@ public class BaseComponent extends AppCompatActivity {
                 .build();
         NavController navController2 = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupWithNavController(navView, navController2);
+
     }
     @Override
     public boolean onSupportNavigateUp() {

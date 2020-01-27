@@ -27,28 +27,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
                     android:id="@+id/child_vector"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/child"
-                    app:civ_border_color="#FF5722"
-                    app:civ_border_width="2dp"
+                    android:src="@drawable/statist"
                     android:layout_marginTop="10dp"
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/student_name"
+                    android:text="@string/title_degree"
                     android:gravity="center_horizontal"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
-
+            <View
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:background="@color/bluetran"
+                android:layout_marginStart="20dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_marginStart="2dp"
+                android:background="@color/bluetran"
+                />
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="40dp"
                 android:layout_height="150dp"
@@ -61,7 +71,7 @@
                 android:layout_height="match_parent"
                 android:text="Degree is only an assessment of a test paper, so please encourage your son, no matter what score"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="@color/orange"
+                android:textColor="@color/colorPrimary"
                 android:textSize="15sp"/>
         </LinearLayout>
 
@@ -97,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Term One"
-                    android:background="#FF5722"
+                    android:background="@color/red"
                     android:textColor="#ffffff"
                     android:gravity="bottom"
                     android:padding="5dp"
@@ -155,6 +165,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:textStyle="bold"
                                 android:text="Subject"
                                 />
                         </androidx.cardview.widget.CardView>
@@ -235,6 +246,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Total"
+                                android:textStyle="bold"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
                         <View
@@ -284,7 +296,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -304,7 +316,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -324,7 +336,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -344,7 +356,8 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -395,7 +408,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -415,7 +428,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -435,7 +448,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -455,7 +468,8 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -506,7 +520,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -526,7 +540,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -546,7 +560,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -566,7 +580,8 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="A"
-                                android:textColor="#4CAF50"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 

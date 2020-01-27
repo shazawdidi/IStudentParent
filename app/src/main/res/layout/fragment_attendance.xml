@@ -27,28 +27,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
                     android:id="@+id/child_vector"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/child"
-                    app:civ_border_color="#FF5722"
-                    app:civ_border_width="2dp"
+                    android:src="@drawable/attendance"
                     android:layout_marginTop="10dp"
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/student_name"
                     android:gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:text="@string/attendance"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
-
+            <View
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:background="@color/bluetran"
+                android:layout_marginStart="20dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_marginStart="2dp"
+                android:background="@color/bluetran"
+                />
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="40dp"
                 android:layout_height="150dp"
@@ -61,7 +71,7 @@
                 android:layout_height="match_parent"
                 android:text="Be careful to monitor your child's attendance to school regularly "
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="@color/orange"
+                android:textColor="@color/colorPrimary"
                 android:textSize="15sp"/>
         </LinearLayout>
 
@@ -149,7 +159,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="@string/math"
-                                android:textColor="@color/blue"
+                                android:textColor="@color/black"
 
                                 />
                         </androidx.cardview.widget.CardView>
@@ -169,7 +179,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Arabic"
-                                android:textColor="@color/blue"
+                                android:textColor="@color/black"
                                 />
                         </androidx.cardview.widget.CardView>
 
@@ -189,7 +199,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Science"
-                                android:textColor="@color/blue"
+                                android:textColor="@color/black"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -216,7 +226,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="attend"
-                                android:textColor="@color/green"
+                                android:textColor="@color/blue"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -236,7 +246,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="attend"
-                                android:textColor="@color/green"
+                                android:textColor="@color/blue"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
@@ -256,7 +266,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="attend"
-                                android:textColor="@color/green"
+                                android:textColor="@color/blue"
                                 android:padding="5dp"/>
                         </androidx.cardview.widget.CardView>
 
