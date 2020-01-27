@@ -13,9 +13,9 @@
         tools:ignore="GoogleAppIndexingWarning"
         android:fullBackupContent="true">
         <activity
-            android:name="com.tztechs.student.BaseComponent"
+            android:name="com.tztechs.student.base.BaseComponent"
             android:label="@string/title_activity_base_component"/>
-        <activity android:name="com.tztechs.student.MainActivity">
+        <activity android:name="com.tztechs.student.welcome.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,9 +1,12 @@
-package com.tztechs.student;
+package com.tztechs.student.welcome;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.tztechs.student.R;
+import com.tztechs.student.base.BaseComponent;
 
 public class MainActivity extends AppCompatActivity {
 
