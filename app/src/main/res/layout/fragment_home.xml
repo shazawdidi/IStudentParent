@@ -10,7 +10,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/child"
         app:civ_border_color="@color/orange"
@@ -21,10 +21,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="80dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
@@ -89,7 +89,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
@@ -107,7 +107,7 @@
                     android:padding="5dp"
                     android:text="Time Table"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="10sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -129,7 +129,7 @@
                     android:padding="5dp"
                     android:text="Bus"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="10sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -151,7 +151,7 @@
                     android:padding="5dp"
                     android:text="Student Fess"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <View
@@ -182,11 +182,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/up_coming_events"
-                        android:textColor="@color/black" />
-
+                        android:textColor="@color/red" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gry"
+                        android:padding="5dp" />
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="100dp">
 
                     </androidx.recyclerview.widget.RecyclerView>
 
@@ -196,12 +201,11 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
 
@@ -209,45 +213,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Note From School"
-                        android:textColor="@color/black" />
-
+                        android:textColor="@color/blue" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gry"
+                        android:padding="5dp" />
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+                        android:layout_height="100dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
 
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
 
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="381dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="80dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

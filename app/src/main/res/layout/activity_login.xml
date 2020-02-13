@@ -12,6 +12,7 @@
     tools:context=".ui.user.ui.login.LoginActivity">
 
 
+
     <EditText
         android:id="@+id/phone_number"
         android:layout_width="0dp"

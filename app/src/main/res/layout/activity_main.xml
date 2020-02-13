@@ -7,5 +7,6 @@
     tools:context=".welcome.MainActivity"
     android:background="@drawable/splash">
 
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
