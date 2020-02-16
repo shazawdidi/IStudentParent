@@ -7,6 +7,7 @@ import android.os.Handler;
 
 import com.tztechs.student.R;
 import com.tztechs.student.base.BaseComponent;
+import com.tztechs.student.ui.user.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
-                 Intent mainIntent = new Intent(MainActivity.this, BaseComponent.class);
+                 Intent mainIntent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(mainIntent);
                 finish();
             }

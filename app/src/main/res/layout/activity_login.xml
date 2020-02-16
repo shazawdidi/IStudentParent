@@ -5,32 +5,49 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".ui.user.ui.login.LoginActivity">
 
 
+    <com.hbb20.CountryCodePicker
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="232dp"
+        android:id="@+id/ccp"
+        app:contentColor="@color/colorAccent"
+        app:hideNameCode="true"
+        android:gravity="center"
+        android:background="@drawable/pickershape"
+        app:showFlag="true"
+        app:defaultCode="249"
+        app:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/phone_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.hbb20.CountryCodePicker>
 
     <EditText
         android:id="@+id/phone_number"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/shape"
         android:gravity="center"
         android:hint="@string/prompt_phone"
         android:inputType="phone"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
@@ -38,9 +55,9 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
         android:enabled="false"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_button"
         android:text="@string/action_sign_in"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
