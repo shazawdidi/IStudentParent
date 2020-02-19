@@ -1,8 +1,11 @@
-package com.tztechs.student.ui.user.ui.login;
+package com.tztechs.student.ui.user.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -12,6 +15,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.hbb20.CountryCodePicker;
 import com.tztechs.student.R;
+import com.tztechs.student.base.BaseComponent;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,9 +23,8 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
 
-    LoggedInUserView model;
     @BindView(R.id.ccp)
-    CountryCodePicker ccp;
+    ImageView ccp;
     @BindView(R.id.phone_number)
     EditText phoneNumber;
     @BindView(R.id.login)
@@ -36,19 +39,20 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        phoneNumber.setText("900940206");
-
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,BaseComponent.class);
+                startActivity(intent);
+//                finish();
+            }
+        });
 
     }
 
-    private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = getString(R.string.welcome) + model.getDisplayName();
-        Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
-    }
 
-    private void showLoginFailed(@StringRes Integer errorString) {
-        Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
-    }
+
+
 
 
 }

@@ -11,7 +11,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    public static final String BASE_URL = "https://students.free.beeceptor.com/";
+    public static final String BASE_URL = "http://5e36a2fef7e55d0014ad526b.mockapi.io/";
 
 
     public static Retrofit getClient(String baseUrl)

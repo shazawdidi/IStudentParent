@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -20,7 +19,7 @@ import com.tztechs.student.R;
 import com.tztechs.student.data.DataInterface;
 import com.tztechs.student.data.RetrofitClient;
 import com.tztechs.student.models.Attend;
-import com.tztechs.student.models.AttendanceResponse;
+import com.tztechs.student.models.response.AttendanceResponse;
 
 import java.util.List;
 

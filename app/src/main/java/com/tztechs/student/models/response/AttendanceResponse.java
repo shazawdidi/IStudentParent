@@ -1,6 +1,7 @@
-package com.tztechs.student.models;
+package com.tztechs.student.models.response;
 
 import com.google.gson.annotations.SerializedName;
+import com.tztechs.student.models.Attend;
 
 import java.util.ArrayList;
 import java.util.List;

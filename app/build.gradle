@@ -53,8 +53,8 @@ dependencies {
     //View Pager
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     //code picker
-    implementation 'com.github.inpossoft:CountryCodePickerProject:2.0.0'
-//    implementation 'com.hbb20:ccp:2.3.7'
+//    implementation 'com.github.inpossoft:CountryCodePickerProject:2.0.0'
+    implementation 'com.hbb20:ccp:2.3.7'
     //otp view
     implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6') {
         exclude group: 'android.appcompat', module: 'appcompat'

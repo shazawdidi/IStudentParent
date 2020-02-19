@@ -6,20 +6,19 @@
     android:layout_height="match_parent">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="5dp"
-            app:srcCompat="@drawable/ic_label_black_24dp"
-            />
+            app:srcCompat="@drawable/ic_label_black_24dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="120dp"
@@ -28,30 +27,32 @@
             android:padding="10dp">
 
             <TextView
+                android:id="@+id/tv_event_date"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/acme"
                 android:gravity="center"
                 android:text="Juli 2020"
-                android:textColor="@color/orange"
 
-                />
+                android:textColor="@color/orange" />
         </androidx.cardview.widget.CardView>
 
 
-
-
         <androidx.cardview.widget.CardView
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
             android:padding="10dp">
+
             <TextView
+                android:id="@+id/tv_event_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
                 android:gravity="center"
+                android:padding="5dp"
                 android:text="Graduation Event "
-                android:textColor="@color/black"
-                android:padding="5dp"/>
+                android:textColor="#00897B" />
         </androidx.cardview.widget.CardView>
 
 
