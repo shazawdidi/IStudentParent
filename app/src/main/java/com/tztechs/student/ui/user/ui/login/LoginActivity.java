@@ -8,21 +8,36 @@ import android.widget.Toast;
 
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.hbb20.CountryCodePicker;
 import com.tztechs.student.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 public class LoginActivity extends AppCompatActivity {
 
+    LoggedInUserView model;
+    @BindView(R.id.ccp)
+    CountryCodePicker ccp;
+    @BindView(R.id.phone_number)
+    EditText phoneNumber;
+    @BindView(R.id.login)
+    Button login;
+    @BindView(R.id.loading)
+    ProgressBar loading;
+    @BindView(R.id.container)
+    ConstraintLayout container;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
+        phoneNumber.setText("900940206");
 
-        final EditText phoneNumberEditText = findViewById(R.id.phone_number);
-        final Button loginButton = findViewById(R.id.login);
-        final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
     }
 

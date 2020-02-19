@@ -10,6 +10,7 @@
     <color name="blue">#0091EA</color>
     <color name="bluetran">#80D8FF</color>
     <color name="red">#FF5252</color>
+    <color name="red_dark">#4B0A0A</color>
     <color name="lemon">#B2FF59</color>
     <color name="yellow">#FFD600</color>
     <color name="colorAccent">#000000</color>
